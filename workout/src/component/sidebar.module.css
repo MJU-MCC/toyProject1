@@ -6,32 +6,24 @@
     flex-direction: column;
     margin-top: 30%;
   }
-  #userid{
-    height: 30px;
-    border-radius: 10px;
-    border: gray 3px solid;
-  }
-  #userpassword{
-    height: 30px;
-    border-radius: 10px;
-    border: gray 3px solid;
-  }
   .buttons{
     display: flex;
+    flex-direction: column;
   }
   .signin{
     font-size: 15px;
     font-weight: bold;
     height: 30px;
-    width: 50%;
+    width: 100%;
     border: gray 2px solid;
     border-radius: 5px;
+    margin-bottom: 10px;
   }
   .signup{
     font-size: 15px;
     font-weight: bold;
     height: 30px;
-    width: 50%;
+    width: 100%;
     border: gray 2px solid;
     border-radius: 5px;
   }
