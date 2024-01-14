@@ -2,6 +2,7 @@ import './App.css';
 import Sidebar from "./component/sidebar";
 import Navbar from "./component/navbar";
 import {BrowserRouter,Route,Routes}from "react-router-dom"
+import Signup from './component/signup';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
           <Navbar/>
           <Routes>
             <Route path='/' element={<Sidebar/>}></Route>
-            <Route path='/signup'></Route>
+            <Route path='/signup' element={<Signup/>}></Route>
           </Routes>
       </div>
     </BrowserRouter>
