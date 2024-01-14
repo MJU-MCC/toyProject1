@@ -1,0 +1,37 @@
+.sidebar{
+    width: 30%;
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    flex-direction: column;
+    margin-top: 30%;
+  }
+  #userid{
+    height: 30px;
+    border-radius: 10px;
+    border: gray 3px solid;
+  }
+  #userpassword{
+    height: 30px;
+    border-radius: 10px;
+    border: gray 3px solid;
+  }
+  .buttons{
+    display: flex;
+  }
+  .signin{
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    width: 50%;
+    border: gray 2px solid;
+    border-radius: 5px;
+  }
+  .signup{
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    width: 50%;
+    border: gray 2px solid;
+    border-radius: 5px;
+  }

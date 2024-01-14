@@ -1,15 +1,16 @@
 import React from "react";
+import styles from "./navbar.module.css"
 
 function Navbar(){
     return(
-        <div className="nav">
+        <div className={styles.navbar}>
             <div>workout</div>
-            <div className="nav-page">
-                <div className="diet">diet</div>
-                <div className="diary">diary</div>
+            <div className={styles.navpage}>
+                <div className={styles.diet}>diet</div>
+                <div className={styles.diary}>diary</div>
             </div>
 
-            <div className="menu">=</div>
+            <div className={styles.menu}>=</div>
         </div>
     )
 }

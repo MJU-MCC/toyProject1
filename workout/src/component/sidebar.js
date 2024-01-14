@@ -1,13 +1,14 @@
 import React from "react";
+import styles from "./sidebar.module.css"
 
 function Sidebar(){
     return(
-        <div className="side-bar">
-            <input type="text" id="userid"></input>
-            <input type="text" id="userpassword"></input>
-            <div className="buttons">
-                <button className="signin" type="submit">sign in</button>
-                <button className="signup" type="submit">sign up</button>
+        <div className={styles.sidebar}>
+            <input type="text" id={styles.userid}></input>
+            <input type="text" id={styles.userpassword}></input>
+            <div className={styles.buttons}>
+                <button className={styles.signin} type="submit">sign in</button>
+                <button className={styles.signup} type="submit">sign up</button>
             </div>
         </div>
     )
