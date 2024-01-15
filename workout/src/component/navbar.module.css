@@ -11,12 +11,20 @@
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-  }
-  .diet{
+}
+.diet{
     width: 50%;
     margin: 0 20px;
-  }
-  .diary{
+    text-decoration: none;
+    color: aliceblue;
+}
+.diary{
     width: 50%;
     margin: 0 20px;
-  }
+    text-decoration: none;
+    color: aliceblue;
+}
+.logo{
+  text-decoration: none;
+  color: aliceblue;
+}

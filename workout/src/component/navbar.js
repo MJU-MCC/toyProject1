@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./navbar.module.css"
+import { Link } from "react-router-dom";
 
 function Navbar(){
     return(
         <div className={styles.navbar}>
-            <div>workout</div>
+            <Link to='/' className={styles.logo}>명짐</Link>
             <div className={styles.navpage}>
-                <div className={styles.diet}>diet</div>
-                <div className={styles.diary}>diary</div>
+                <Link to='/diet' className={styles.diet}>diet</Link>
+                <Link to='diary' className={styles.diary}>diary</Link>
             </div>
 
             <div className={styles.menu}>=</div>
