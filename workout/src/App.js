@@ -1,5 +1,5 @@
 import './App.css';
-import Sidebar from "./component/sidebar";
+import Main from "./component/main";
 import Navbar from "./component/navbar";
 import {BrowserRouter,Route,Routes}from "react-router-dom"
 import Signup from './component/signup';
@@ -11,7 +11,7 @@ function App() {
 
           <Navbar/>
           <Routes>
-            <Route path='/' element={<Sidebar/>}></Route>
+            <Route path='/' element={<Main/>}></Route>
             <Route path='/signup' element={<Signup/>}></Route>
           </Routes>
       </div>
