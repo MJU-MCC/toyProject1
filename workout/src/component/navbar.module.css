@@ -5,6 +5,10 @@
     font-size: 30px;
     padding: 15px;
     justify-content: space-between;
+    align-items: center;
+}
+p{
+    font-size: 15px;
 }
 .navpage{
     padding: 10px;

@@ -178,41 +178,5 @@ function Signup(){
         </div>
       </div>
     );
-//    출처: https://bokartstudio.tistory.com/114 [dev__note:티스토리]
-    // const[account,setAccount]=useState({
-    //     id:"",
-    //     passwd:"",
-    //     passwdCheck:"",
-    // })
-    // function handleChange(e){
-    //     setAccount({
-    //         ...account,
-    //         [e.target.name]:e.target.value,
-
-    //     })
-    // }
-
-    // function checkPw(){
-    //     if(passwd===passwdCheck){
-    //         setPwCheck(true);
-    //     }
-    //     else{
-    //         setPwCheck(false);
-    //     }
-    // }
-
-    // return (
-    //     <div className="box">
-    //         <div className="id">
-    //             <input type="text" className="idtext" onChange={changeAccount}></input>
-    //             <button>중복확인</button>
-    //         </div>
-    //         <div className="password">
-    //             <input type="password" className="passwordtext" onChange={changeAccount}></input>
-    //             <input type="password" className="passwordcheck" onChange={changeAccount}></input>
-    //         </div>
-    //         <button>가입하기</button>
-    //     </div>
-    //  )
 }
 export default Signup
