@@ -3,7 +3,7 @@ import styles from "./navbar.module.css"
 import { Link } from "react-router-dom";
 
 function Navbar(){
-    let [message,setMessage]=useState("welcome!")
+    const [message,setMessage]=useState("welcome!")
 
     return(
         <div className={styles.navbar}>

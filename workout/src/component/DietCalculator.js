@@ -1,5 +1,7 @@
 // src/components/DietCalculator.js
 import React, { useState } from 'react';
+import MealRecord from './MealRecord';
+
 
 function DietCalculator() {
   const [totalCalories, setTotalCalories] = useState('');
@@ -17,7 +19,7 @@ function DietCalculator() {
   const handleCalculate = () => {
     const total = parseFloat(totalCalories);
     const carbRat = parseFloat(carbohydratesRatio) / 100;
-    const proteinRat = parseFloat(proteinRatio) / 100; // 수정된 부분
+    const proteinRat = parseFloat(proteinRatio) / 100;
     const fatRat = parseFloat(fatRatio) / 100;
 
     const proteinCalories = total * proteinRat;
@@ -33,6 +35,8 @@ function DietCalculator() {
   };
  
   const addMeal = () => {
+    if (!newMealName || !newMealCarbs || !newMealProtein || !newMealFat) return;
+
     const meal = {
       name: newMealName,
       carbs: parseFloat(newMealCarbs),
@@ -42,7 +46,7 @@ function DietCalculator() {
 
     setMealRecords([...mealRecords, meal]);
 
-    // 추가 후 입력 필드를 초기화합니다.
+    //필드를 초기화
     setNewMealName('');
     setNewMealCarbs('');
     setNewMealProtein('');
@@ -95,16 +99,14 @@ function DietCalculator() {
         <h2>Meal Record</h2>
         <div>
           <input type="text" value={newMealName} onChange={(e) => setNewMealName(e.target.value)} placeholder="Meal Name" />
-          <input type="number" value={newMealCarbs} onChange={(e) => setNewMealCarbs(e.target.value)} placeholder="Carbs" />
-          <input type="number" value={newMealProtein} onChange={(e) => setNewMealProtein(e.target.value)} placeholder="Protein" />
-          <input type="number" value={newMealFat} onChange={(e) => setNewMealFat(e.target.value)} placeholder="Fat" />
+          <input type="number" value={newMealCarbs} onChange={(e) => setNewMealCarbs(e.target.value)} placeholder="Carbs(g)" />
+          <input type="number" value={newMealProtein} onChange={(e) => setNewMealProtein(e.target.value)} placeholder="Protein(g)" />
+          <input type="number" value={newMealFat} onChange={(e) => setNewMealFat(e.target.value)} placeholder="Fat(g)" />
           <button onClick={addMeal}>Add Meal</button>
         </div>
         <ul>
-          {mealRecords.map((meal, index) => (
-            <li key={index}>
-              {meal.name} - Carbs: {meal.carbs}g, Protein: {meal.protein}g, Fat: {meal.fat}g
-            </li>
+            {mealRecords.map((meal, index) => (
+            <MealRecord key={index} meal={meal} index={index} />
           ))}
         </ul>
       </div>
