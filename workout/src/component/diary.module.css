@@ -1,0 +1,25 @@
+/* diary.module.css */
+
+.Calendar {
+    width: 70%; /* 캘린더의 가로 너비를 100%로 조정 */
+    background-color: #fff;
+    border-radius: 5px;
+
+  }
+  
+  .Calendar__header {
+    background-color: #f0f0f0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .Calendar__tile {
+    padding: 1rem;
+    padding-bottom: 2rem /* 아래 부분의 패딩을 추가하여 각 날짜가 더 많은 공간을 가지도록 함 */
+  }
+  
+  .Calendar__tile--active {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+  }
+  
