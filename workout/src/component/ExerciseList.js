@@ -8,7 +8,7 @@ function ExerciseList({ exercises }) {
       <ul>
         {exercises.map((exercise, index) => (
           <li key={index}>
-            {exercise.exercise} - Sets: {exercise.sets}, Reps: {exercise.reps}
+            {exercise.exercise} - Sets: {exercise.sets}, Reps: {exercise.reps}, Weight: {exercise.weight}
           </li>
         ))}
       </ul>
