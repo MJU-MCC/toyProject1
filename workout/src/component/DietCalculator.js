@@ -79,6 +79,7 @@ function DietCalculator() {
         <input type="number" value={fatRatio} onChange={(e) => setFatRatio(e.target.value)} />
       </div>
       <button onClick={handleCalculate}>Calculate</button>
+      <h2>Total Nutrition Result</h2>
       {nutritionResult && (
         <div>
           <h2>Total Nutrition Result</h2>
